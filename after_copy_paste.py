@@ -1,6 +1,5 @@
 ### Here we have the code to copy paste
 
-
 # III. Tree-based methods
 
 # III.b.1 : Build subsets
@@ -36,6 +35,7 @@ for i in skuSet[1:]: #Iteration over items
 
 DT_cen_visualization = DecisionTreeRegressor(max_features=43,max_depth=3,random_state=0).fit(X_cen_train, y_train)
 print('OOS R2:',round(r2_score(y_test, DT_cen_visualization.predict(X_cen_test)),3))
+
 
 # c) Compare performances on validation data:
 
