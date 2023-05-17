@@ -104,7 +104,7 @@ for i in skuSet:
 print('OOS R2:',round(r2_score(y_test, np.array(y_pred)),3))
 
 t = time.time()-tZero
-print("Time to compute:",round(t,3)," sec.")
+print("Time to compute:",round(t,3)," sec")
 
 
 
