@@ -1,8 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -23,12 +23,10 @@ html, body {
 
 .vfrc-widget--chat {
   position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  top: 10% !important; /* Adjusted to center the chat vertically */
+  left: 10% !important; /* Adjusted to center the chat horizontally */
+  width: 80% !important; /* Set to 80% of the screen width */
+  height: 80% !important; /* Set to 80% of the screen height */
   border: none !important;
   max-width: none !important;
   max-height: none !important;
