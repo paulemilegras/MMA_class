@@ -13,6 +13,13 @@ html, body {
   inset: initial;
 }
 
+.vfrc-widget--launcher {
+  position: absolute !important;
+  top: 50% !important; /* Déplace le lanceur vers le bas à 50% de la hauteur de son parent */
+  left: 50% !important; /* Déplace le lanceur vers la droite à 50% de la largeur de son parent */
+  transform: translate(-50%, -50%); /* Ajuste le lanceur pour le centrer précisément */
+}
+
 .vfrc-widget--chat {
   position: fixed !important;
   border: none !important;
@@ -41,19 +48,4 @@ html, body {
   border-top: 2px solid var(--shadows-shadow4);
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-
-/* Supposons que '.sqs-block-code' est la classe de votre bloc de code */
-.sqs-block-code {
-  position: relative; /* Ceci est nécessaire pour positionner absolument le lanceur à l'intérieur */
-}
-
-/* Le lanceur hérite de cette classe ou d'un ID spécifique pour le cibler */
-.vfrc-widget--launcher {
-  position: absolute;
-  top: 0; /* Ajustez ces valeurs en fonction de l'emplacement exact que vous voulez */
-  left: 0; /* Ajustez ces valeurs en fonction de l'emplacement exact que vous voulez */
-  width: 100%; /* Assurez-vous que le lanceur remplit le bloc de code */
-  height: 100%; /* Assurez-vous que le lanceur remplit le bloc de code */
 }
