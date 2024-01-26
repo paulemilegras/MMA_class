@@ -15,8 +15,8 @@ html, body {
 
 .vfrc-widget--launcher {
   position: relative !important;
-  bottom: 20px !important; /* Ajustez selon la marge souhaitée du bas */
-  right: 20px !important; /* Ajustez selon la marge souhaitée de la droite */
+  top: 20px !important; /
+  left: 20px !important; 
 }
 
 .vfrc-widget--chat {
