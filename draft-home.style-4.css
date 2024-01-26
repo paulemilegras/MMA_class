@@ -15,24 +15,27 @@ html, body {
 
 .vfrc-widget--launcher {
   position: fixed !important;
-  bottom: 50% !important; /* Centré verticalement */
-  right: 50% !important; /* Centré horizontalement */
-  transform: translate(50%, 50%); /* Ajuste le positionnement pour un centrage parfait */
-  width: auto; /* Largeur automatique selon le contenu */
-  height: auto; /* Hauteur automatique selon le contenu */
-  background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
-  border-radius: 0; /* Rend le bouton rectangulaire */
-  padding: 10px 20px; /* Espace interne autour du texte */
-  text-align: center; /* Centrage du texte */
-  color: white; /* Couleur du texte */
-  font-size: 16px; /* Taille du texte */
-  cursor: pointer; /* Curseur en forme de main pour indiquer la possibilité de cliquer */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour le relief */
-  border: none; /* Pas de bordure */
+  bottom: 20px !important; /* Ajustez selon la marge souhaitée du bas */
+  right: 20px !important; /* Ajustez selon la marge souhaitée de la droite */
+  background-color: #2ecc71; /* La couleur de fond du bouton existant */
+  color: white; /* La couleur de texte du bouton existant */
+  padding: 10px 25px; /* Ajustez selon l'espace intérieur souhaité */
+  font-size: 16px; /* Ajustez selon la taille de texte souhaitée */
+  border-radius: 25px; /* Ajustez pour les coins arrondis */
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Pour un effet de survol */
+}
+
+.vfrc-widget--launcher:hover {
+  background-color: #1abc9c; /* Un peu plus clair pour l'effet de survol */
 }
 
 .vfrc-widget--launcher::before {
-  content: "Discuter avec Maia"; /* Texte à afficher */
+  content: "Discuter avec Maia";
+  display: block; /* S'assurer que le texte est bien affiché */
 }
 
 .vfrc-widget--chat {
