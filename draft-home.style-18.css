@@ -14,7 +14,7 @@ html, body {
 }
 
 .vfrc-widget--launcher {
-  position: relative !important;
+  position: absolute !important;
   bottom: 50% !important; 
   right: 50% !important; 
 }
