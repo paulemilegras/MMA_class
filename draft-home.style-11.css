@@ -14,10 +14,11 @@ html, body {
 }
 
 .vfrc-widget--launcher {
-  position: fixed !important;
-  top: 50% !important; /* Déplace le lanceur vers le bas à 50% de la hauteur de son parent */
-  left: 50% !important; /* Déplace le lanceur vers la droite à 50% de la largeur de son parent */
-  transform: translate(-50%, -50%); /* Ajuste le lanceur pour le centrer précisément */
+  position: absolute !important; /* Position absolue par rapport au premier parent positionné ou au body si aucun parent n'est positionné */
+  top: 50%; /* Centré verticalement */
+  left: 50%; /* Centré horizontalement */
+  transform: translate(-50%, -50%); /* Ajustement précis pour centrer l'élément par rapport à ses propres dimensions */
+  z-index: 1000; /* Assurez-vous que le lanceur est au-dessus des autres éléments */
 }
 
 .vfrc-widget--chat {
