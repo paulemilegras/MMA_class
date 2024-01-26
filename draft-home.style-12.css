@@ -14,11 +14,12 @@ html, body {
 }
 
 .vfrc-widget--launcher {
-  position: absolute !important; /* Position absolue par rapport au premier parent positionné ou au body si aucun parent n'est positionné */
-  top: 50%; /* Centré verticalement */
-  left: 50%; /* Centré horizontalement */
-  transform: translate(-50%, -50%); /* Ajustement précis pour centrer l'élément par rapport à ses propres dimensions */
-  z-index: 1000; /* Assurez-vous que le lanceur est au-dessus des autres éléments */
+  position: absolute !important; 
+  top: 50%; /
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 99999 !important;
+  background-color: #2ecc71;
 }
 
 .vfrc-widget--chat {
@@ -26,10 +27,10 @@ html, body {
   border: none !important;
   max-width: none !important;
   max-height: none !important;
-  top: 10% !important;
-  left: 10% !important;
-  width: 80% !important;
-  height: 80% !important;
+  top: 20% !important;
+  left: 20% !important;
+  width: 60% !important;
+  height: 60% !important;
 }
 
 @media screen and (max-width: 768px) {
