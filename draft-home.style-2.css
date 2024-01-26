@@ -14,7 +14,25 @@ html, body {
 }
 
 .vfrc-widget--launcher {
-  /* Removed the 'display: none' to keep the launcher visible */
+  position: fixed !important;
+  bottom: 50% !important; /* Centré verticalement */
+  right: 50% !important; /* Centré horizontalement */
+  transform: translate(50%, 50%); /* Ajuste le positionnement pour un centrage parfait */
+  width: auto; /* Largeur automatique selon le contenu */
+  height: auto; /* Hauteur automatique selon le contenu */
+  background-color: #007bff; /* Couleur de fond du bouton, à personnaliser */
+  border-radius: 0; /* Rend le bouton rectangulaire */
+  padding: 10px 20px; /* Espace interne autour du texte */
+  text-align: center; /* Centrage du texte */
+  color: white; /* Couleur du texte */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Curseur en forme de main pour indiquer la possibilité de cliquer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour le relief */
+  border: none; /* Pas de bordure */
+}
+
+.vfrc-widget--launcher::before {
+  content: "Discuter avec Maia"; /* Texte à afficher */
 }
 
 .vfrc-widget--chat {
@@ -22,15 +40,12 @@ html, body {
   border: none !important;
   max-width: none !important;
   max-height: none !important;
-
-  /* Styles for larger screens */
   top: 10% !important;
   left: 10% !important;
   width: 80% !important;
   height: 80% !important;
 }
 
-/* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
   .vfrc-widget--chat {
     top: 0 !important;
@@ -41,7 +56,7 @@ html, body {
 }
 
 .vfrc-header--button {
-  /* Removed the 'display: none' to keep the header button visible */
+  /* Style pour le bouton de l'en-tête, si nécessaire */
 }
 
 .vfrc-footer {
