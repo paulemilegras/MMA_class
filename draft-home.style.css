@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vfrc-widget {
+
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  inset: initial;
+
+}
+
+.vfrc-widget--launcher {
+
+  display: none !important;
+
+}
+
+.vfrc-widget--chat {
+  position: fixed !important;
+  top: 10% !important; /* Adjusted to center the chat vertically */
+  left: 10% !important; /* Adjusted to center the chat horizontally */
+  width: 80% !important; /* Set to 80% of the screen width */
+  height: 80% !important; /* Set to 80% of the screen height */
+  border: none !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.vfrc-header--button {
+
+  display: none !important;
+
+}
+
+.vfrc-footer {
+
+  border-top: 2px solid var(--shadows-shadow4);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+}
