@@ -15,8 +15,9 @@ html, body {
 
 .vfrc-widget--launcher {
   position: relative !important;
-  top: 20px !important; /
-  left: 20px !important; 
+  top: 50% !important; /* Déplace le lanceur vers le bas à 50% de la hauteur de son parent */
+  left: 50% !important; /* Déplace le lanceur vers la droite à 50% de la largeur de son parent */
+  transform: translate(-50%, -50%); /* Ajuste le lanceur pour le centrer précisément */
 }
 
 .vfrc-widget--chat {
