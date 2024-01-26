@@ -9,8 +9,8 @@ html, body {
 .vfrc-widget {
 
   position: relative !important;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   inset: initial;
 
 }
