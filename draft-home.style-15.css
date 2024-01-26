@@ -14,11 +14,20 @@ html, body {
 }
 
 .vfrc-widget--launcher {
+  
+  position: relative !important;
+  top: 50% !important; 
+  left: 50% !important; 
+  transform: translate(-50%, -50%) !important;
+  background-color: #2ecc71;
+}
+
+.vfrc-widget--launcher {
   position: absolute !important; 
   top: 50%; /
   left: 50%; 
   transform: translate(-50%, -50%); 
-  z-index: -99999 !important;
+  z-index: 1000 !important;
   background-color: #2ecc71;
 }
 
