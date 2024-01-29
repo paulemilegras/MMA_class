@@ -48,8 +48,16 @@ html, body {
 }
 
 .vfrc-system-response--list .vfrc-message--chat {
-  max-width: 80%;
-  width: 80%;
+  min-width: 400px !important;
+  width: 80% !important; /* Nouvelle ligne ajoutée */
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .vfrc-system-response--list .vfrc-message--chat {
+    min-width: 0 !important; /* Modifié de 'none' à 0 */
+    width: 80% !important; /* Assurez-vous que la largeur est également à 80% pour les petits écrans */
+  }
 }
 
 
