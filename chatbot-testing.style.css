@@ -22,14 +22,15 @@ html, body {
 .vfrc-widget--chat {
   position: fixed !important;
   border: none !important;
-  max-width: none !important;
-  max-height: none !important;
 
   /* Styles for larger screens */
   top: 10% !important;
   left: 25% !important;
   width: 50% !important;
   height: 80% !important;
+  min-width: 768px !important;
+  max-width: 800px !important;
+  max-height: 804px !important;
 }
 
 /* Responsive design for smaller screens */
