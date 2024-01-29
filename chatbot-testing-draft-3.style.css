@@ -47,7 +47,7 @@ html, body {
   }
 }
 
-.vfrc-system-response--list .vfrc-message--chat {
+.vfrc-message--chat {
   min-width: 80%;
 }
 
