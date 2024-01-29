@@ -43,9 +43,9 @@ html, body {
     width: 100% !important; /* Largeur complète de l'écran */
     height: 100% !important; /* Hauteur complète de l'écran */
     min-width: 0 !important; /* Aucune largeur minimale pour les petits écrans */
+    max-height: none !important; /* Aucune hauteur maximale pour les petits écrans */
   }
 }
-
 
 
 .vfrc-header--button {
