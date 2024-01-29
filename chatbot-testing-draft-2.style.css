@@ -48,8 +48,7 @@ html, body {
 }
 
 .vfrc-system-response--list .vfrc-message--chat {
-  max-width: 460px;
-  width: 400px;
+  min-width: 80%;
 }
 
 .vfrc-header--button {
