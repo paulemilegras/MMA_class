@@ -26,12 +26,12 @@ html, body {
   /* Centrage du widget pour les grands écrans */
   top: 50% !important; /* Centre verticalement */
   left: 50% !important; /* Centre horizontalement */
-  transform: translate(-50%, -50%) !important; /* Ajustement pour un centrage précis */
   width: 50% !important; /* Largeur fixe pour les grands écrans */
   height: 80% !important; /* Hauteur fixe pour les grands écrans */
   min-width: 768px !important; /* Largeur minimale pour les grands écrans */
   max-width: 800px !important;
   max-height: 804px !important;
+  transform: translate(-50%, -50%) !important; /* Ajustement pour un centrage précis */
 }
 
 /* Responsive design pour les petits écrans */
