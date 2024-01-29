@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vfrc-widget {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  inset: initial;
+}
+
+.vfrc-widget--launcher {
+
+  display: none !important;
+
+}
+
+.vfrc-widget--chat {
+  position: fixed !important;
+  border: none !important;
+
+  /* Centrage du widget pour les grands écrans */
+  top: 50% !important; /* Centre verticalement */
+  left: 50% !important; /* Centre horizontalement */
+  width: 50% !important; /* Largeur fixe pour les grands écrans */
+  height: 80% !important; /* Hauteur fixe pour les grands écrans */
+  min-width: 768px !important; /* Largeur minimale pour les grands écrans */
+  max-width: 800px !important;
+  max-height: 804px !important;
+  transform: translate(-50%, -50%) !important; /* Ajustement pour un centrage précis */
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .vfrc-widget--chat {
+    top: 0 !important; /* Aligner en haut */
+    left: 0 !important; /* Aligner à gauche */
+    transform: none !important; /* Aucune transformation nécessaire */
+    width: 100% !important; /* Largeur complète de l'écran */
+    height: 100% !important; /* Hauteur complète de l'écran */
+    min-width: 0 !important; /* Aucune largeur minimale pour les petits écrans */
+    max-height: none !important; /* Aucune hauteur maximale pour les petits écrans */
+  }
+}
+
+.vfrc-system-response--list .vfrc-message--chat {
+  min-width: 400px !important;
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .vfrc-system-response--list .vfrc-message--chat {
+    min-width: none !important;
+  }
+}
+
+.vfrc-header--button {
+
+  display: none !important;
+
+}
+
+.vfrc-footer {
+  border-top: 2px solid var(--shadows-shadow4);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
