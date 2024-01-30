@@ -49,7 +49,7 @@ html, body {
   max-width: 450px !important;
 }
 .vfrc-user-response .vfrc-message--chat {
-  min-width: 400px !important;
+  max-width: 400px !important;
 }
 
 /* Responsive design pour les petits écrans */
