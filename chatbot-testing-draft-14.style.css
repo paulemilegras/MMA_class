@@ -47,7 +47,7 @@ html, body {
 
 /* Styles pour les grands écrans */
 .vfrc-system-response--list .vfrc-message--chat,
-.vfrc-user-response--list .vfrc-message--chat {
+.vfrc-user-response .vfrc-message--chat {
   max-width: 400px !important; /* Largeur maximale pour contenir les messages longs */
   width: auto !important; /* Permet aux boxes de s'adapter à la taille du contenu */
 }
@@ -55,7 +55,7 @@ html, body {
 /* Responsive design pour les petits écrans */
 @media screen and (max-width: 768px) {
   .vfrc-system-response--list .vfrc-message--chat,
-  .vfrc-user-response--list .vfrc-message--chat {
+  .vfrc-user-response .vfrc-message--chat {
     min-width: 0 !important; /* Suppression de la largeur minimale pour les petits écrans */
     max-width: 100% !important; /* Largeur maximale pour s'adapter à l'écran */
   }
