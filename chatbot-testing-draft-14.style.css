@@ -45,23 +45,21 @@ html, body {
   }
 }
 
-.vfrc-system-response--list .vfrc-message--chat {
-  max-width: 450px !important;
-}
+/* Styles pour les grands écrans */
+.vfrc-system-response--list .vfrc-message--chat,
 .vfrc-user-response--list .vfrc-message--chat {
-  min-width: 400px !important;
+  max-width: 400px !important; /* Largeur maximale pour contenir les messages longs */
+  width: auto !important; /* Permet aux boxes de s'adapter à la taille du contenu */
 }
 
 /* Responsive design pour les petits écrans */
 @media screen and (max-width: 768px) {
-  .vfrc-system-response--list .vfrc-message--chat {
-    max-width: 248 !important;
-  }
+  .vfrc-system-response--list .vfrc-message--chat,
   .vfrc-user-response--list .vfrc-message--chat {
-    max-width: 282 !important;
+    min-width: 0 !important; /* Suppression de la largeur minimale pour les petits écrans */
+    max-width: 100% !important; /* Largeur maximale pour s'adapter à l'écran */
   }
 }
-
 
 .vfrc-header--button {
   display: none !important;
