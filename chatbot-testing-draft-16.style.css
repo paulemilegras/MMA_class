@@ -57,6 +57,8 @@ html, body {
   .vfrc-system-response--list .vfrc-message--chat {
     max-width: 80% !important; /* Largeur maximale adaptative pour les petits écrans */
   }
+}
+@media screen and (max-width: 768px) {
   .vfrc-user-response .vfrc-message--chat {
     max-width: 282px !important; /* Conservez cette valeur si elle fonctionne bien pour les messages utilisateur */
   }
