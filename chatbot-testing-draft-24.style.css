@@ -75,13 +75,13 @@ html, body {
 }
 
 .vfrc-card--description {
-  word-break 'normal',
-  overflow: 'auto', 
-  text-overflow: 'ellipsis', 
+  word-break: normal,
+  overflow: auto, 
+  text-overflow: ellipsis, 
 }
 
 .vfrc-card--header {
-  word-break 'normal',
-  overflow: 'auto', 
-  text-overflow: 'ellipsis', 
+  word-break: normal,
+  overflow: auto, 
+  text-overflow: ellipsis, 
 }
