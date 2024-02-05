@@ -77,9 +77,9 @@ html, body {
 }
 
 .vfrc-card--description {
-  wordBreak: 'break-word',
-  overflow: 'hidden', 
-  textOverflow: 'ellipsis', 
+  wordBreak: 'normal',
+  overflow: 'auto', 
+  text-overflow: 'ellipsis', 
   display: '-webkit-box', // Necessary for the line clamp to work.
   '-webkit-line-clamp': 4, // Specifies the number of lines to show.
   '-webkit-box-orient': 'vertical',
