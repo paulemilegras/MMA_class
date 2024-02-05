@@ -64,8 +64,6 @@ html, body {
   }
 }
 
-
-
 .vfrc-header--button {
   display: none !important;
 }
@@ -77,6 +75,13 @@ html, body {
 }
 
 .vfrc-card--description {
-  wordBreak: 'normal',
+  word-break 'normal',
   overflow: 'auto', 
   text-overflow: 'ellipsis', 
+}
+
+.vfrc-card--header {
+  word-break 'normal',
+  overflow: 'auto', 
+  text-overflow: 'ellipsis', 
+}
