@@ -75,6 +75,7 @@ html, body {
 }
 
 .vfrc-card--description {
+  white-space: pre-line;
   word-break: normal;
   hyphens: auto;
   overflow: auto;
@@ -83,7 +84,7 @@ html, body {
 }
 
 .vfrc-card--header {
-  white-space: normal;
+  white-space: pre-line;
   word-break: normal;
   word-break: ;
   hyphens: auto;
