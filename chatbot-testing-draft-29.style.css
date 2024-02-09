@@ -79,13 +79,14 @@ html, body {
   hyphens: auto;
   overflow: auto;
   text-overflow: ellipsis; 
+  text-align: justify;
 }
 
 .vfrc-card--header {
-  word-break: normal;
-  /*white-space: pre-wrap;*/
   white-space: normal;
+  word-break: normal;
+  word-break: ;
+  hyphens: auto;
   overflow: auto;
   text-overflow: ellipsis; 
-  hyphens: auto;
 }
