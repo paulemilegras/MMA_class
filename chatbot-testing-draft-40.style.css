@@ -108,7 +108,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.41); /* Ajoute une couche noire semi-transparente pour assombrir l'image */
+    background: rgba(0, 0, 0, 0.41); 
     z-index: 0; /* Place la couche sous les éléments enfants */
   }
 
@@ -116,4 +116,17 @@ html, body {
     position: relative;
     z-index: 1; /* S'assure que le contenu est visible au-dessus de la couche assombrissante */
   }
+
+  .vfrc-timestamp{
+    color: lightgray;
+  }
+
+  .vfrc-assistant-info--title {
+    color: white
+  }
+
+  .vfrc-assistant-info--description {
+    color: lightgray;
+  } 
+
 }
