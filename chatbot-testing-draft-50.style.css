@@ -127,8 +127,10 @@ html, body {
 
   .vfrc-avatar {
     z-index: 1;
-  }*/
+  }
 
-
+  .vfrc-chat--session-time {
+    color: lightgray;
+  }
 
 }
