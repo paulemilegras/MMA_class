@@ -94,7 +94,8 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .vfrc-chat {
-    position: relative; /* Nécessaire pour le positionnement du pseudo-élément */
+    position: relative;
+    background-image: url('https://cdn.jsdelivr.net/gh/paulemilegras/MMA_class@main/ob_9693f5_baie-halong-vietnam.jpeg');
     background-size: cover;
     background-position: center;
     overflow: hidden; /* Empêche le pseudo-élément de déborder */
@@ -107,15 +108,12 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://cdn.jsdelivr.net/gh/paulemilegras/MMA_class@main/ob_9693f5_baie-halong-vietnam.jpeg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.41; /* Applique l'opacité de 41% */
-    z-index: 0; /* S'assure que le contenu est placé au-dessus du fond */
+    background: rgba(0, 0, 0, 0.41); /* Ajoute une couche noire semi-transparente pour assombrir l'image */
+    z-index: 0; /* Place la couche sous les éléments enfants */
   }
 
   .vfrc-chat > * {
     position: relative;
-    z-index: 1; /* S'assure que le contenu est visible par-dessus l'image de fond */
+    z-index: 1; /* S'assure que le contenu est visible au-dessus de la couche assombrissante */
   }
 }
