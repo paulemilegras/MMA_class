@@ -112,13 +112,8 @@ html, body {
     z-index: 0; /* Place la couche sous les éléments enfants */
   }
 
-  /*.vfrc-chat > * {
-    position: relative;
-    z-index: 1; // S'assure que le contenu est visible au-dessus de la couche assombrissante 
-  }*/
-
   .vfrc-timestamp {
-    color: lightgray;
+    color: white;
     z-index: 1;
   }
 
@@ -134,8 +129,6 @@ html, body {
     z-index: 1;
   }*/
 
-  /*.vfrc-carousel--button {
-    z-index: 4;
-  }*/
+
 
 }
