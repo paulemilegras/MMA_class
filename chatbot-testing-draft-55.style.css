@@ -101,7 +101,7 @@ html, body {
     overflow: hidden; /* Empêche le pseudo-élément de déborder */
   }
 
-  .vfrc-chat::before {
+  /*.vfrc-chat::before {
     content: "";
     position: absolute;
     top: 0;
@@ -109,8 +109,8 @@ html, body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.41); 
-    z-index: 0; /* Place la couche sous les éléments enfants */
-  }
+    z-index: 0; 
+  }*/
 
   .vfrc-assistant-info--title {
     color: white
@@ -132,6 +132,10 @@ html, body {
   .vfrc-timestamp {
     color: lightgray;
     z-index: 1;
+  }
+
+  .vfrc-chat--overlay {
+    background-color: rgba(0, 0, 0, 0.41);
   }
 
 }
