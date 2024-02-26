@@ -114,10 +114,10 @@ html, body {
 
   /*.vfrc-chat > * {
     position: relative;
-    z-index: 1; /* S'assure que le contenu est visible au-dessus de la couche assombrissante */
+    z-index: 1; // S'assure que le contenu est visible au-dessus de la couche assombrissante 
   }*/
 
-  .vfrc-timestamp{
+  .vfrc-timestamp {
     color: lightgray;
   }
 
