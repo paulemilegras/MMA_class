@@ -136,6 +136,7 @@ html, body {
 
   .vfrc-chat--overlay {
     background-color: rgba(0, 0, 0, 0.41);
+    z-index: 1;
   }
 
 }
