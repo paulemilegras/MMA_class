@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vfrc-widget {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  inset: initial;
+}
+
+.vfrc-widget--launcher {
+  display: none !important;
+}
+
+.vfrc-widget--chat {
+  position: fixed !important;
+  border: none !important;
+
+  /* Centrage du widget pour les grands écrans */
+  top: 50% !important; /* Centre verticalement */
+  left: 50% !important; /* Centre horizontalement */
+  width: 50% !important; /* Largeur fixe pour les grands écrans */
+  height: 80% !important; /* Hauteur fixe pour les grands écrans */
+  min-width: 768px !important; /* Largeur minimale pour les grands écrans */
+  max-width: 800px !important;
+  max-height: 804px !important;
+  transform: translate(-50%, -50%) !important; /* Ajustement pour un centrage précis */
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .vfrc-widget--chat {
+    top: 0 !important; /* Aligner en haut */
+    left: 0 !important; /* Aligner à gauche */
+    transform: none !important; /* Aucune transformation nécessaire */
+    width: 100% !important; /* Largeur complète de l'écran */
+    height: 100% !important; /* Hauteur complète de l'écran */
+    min-width: 0 !important; /* Aucune largeur minimale pour les petits écrans */
+    max-height: none !important; /* Aucune hauteur maximale pour les petits écrans */
+  }
+}
+
+.vfrc-system-response--list .vfrc-message--chat {
+  max-width: 450px; /* Largeur maximale pour les grands écrans */
+}
+.vfrc-user-response .vfrc-message--chat {
+  max-width: 400px; /* Largeur maximale pour les grands écrans */
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .vfrc-system-response--list .vfrc-message--chat {
+    max-width: 248px !important; /* Largeur maximale adaptative pour les petits écrans */
+  }
+}
+@media screen and (max-width: 768px) {
+  .vfrc-user-response .vfrc-message--chat {
+    max-width: 282px !important; /* Conservez cette valeur si elle fonctionne bien pour les messages utilisateur */
+  }
+}
+
+.vfrc-header--button {
+  display: none !important;
+}
+
+.vfrc-footer {
+  border-top: 2px solid var(--shadows-shadow4);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.vfrc-card--description {
+  white-space: pre-line;
+  word-break: normal;
+  hyphens: auto;
+  overflow: auto;
+  text-overflow: ellipsis; 
+  text-align: justify;
+}
+
+.vfrc-card--header {
+  white-space: pre-line;
+  word-break: normal;
+  word-break: ;
+  hyphens: auto;
+  overflow: auto;
+  text-overflow: ellipsis; 
+}
+
+@media screen and (max-width: 768px) {
+  .vfrc-chat {
+    position: relative;
+    background-image: url('https://cdn.jsdelivr.net/gh/paulemilegras/MMA_class@main/ob_9693f5_baie-halong-vietnam.jpeg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Empêche le pseudo-élément de déborder */
+  }
+
+  .vfrc-chat::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.41); 
+    z-index: 0; /* Place la couche sous les éléments enfants */
+  }
+
+  .vfrc-assistant-info--title {
+    color: white
+  }
+
+  .vfrc-assistant-info--description {
+    color: lightgray;
+  } 
+
+  .vfrc-avatar {
+    z-index: 1;
+  }
+
+  .vfrc-chat--session-time {
+    color: lightgray;
+    z-index: 1;
+  }
+
+  .vfrc-timestamp {
+    color: lightgray;
+    z-index: 1;
+  }
+
+}
