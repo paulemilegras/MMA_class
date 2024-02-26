@@ -112,11 +112,6 @@ html, body {
     z-index: 0; /* Place la couche sous les éléments enfants */
   }
 
-  .vfrc-timestamp {
-    color: white;
-    z-index: 1;
-  }
-
   .vfrc-assistant-info--title {
     color: white
   }
@@ -130,6 +125,11 @@ html, body {
   }
 
   .vfrc-chat--session-time {
+    color: lightgray;
+    z-index: 1;
+  }
+
+  .vfrc-timestamp {
     color: lightgray;
     z-index: 1;
   }
