@@ -109,12 +109,12 @@ html, body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.41); 
-    z-index: -1; /* Place la couche sous les éléments enfants */
+    z-index: 0; /* Place la couche sous les éléments enfants */
   }
 
   .vfrc-chat > * {
     position: relative;
-    z-index: 0; /* S'assure que le contenu est visible au-dessus de la couche assombrissante */
+    z-index: 1; /* S'assure que le contenu est visible au-dessus de la couche assombrissante */
   }
 
   .vfrc-timestamp{
@@ -128,5 +128,9 @@ html, body {
   .vfrc-assistant-info--description {
     color: lightgray;
   } 
+
+  .vfrc-carousel--button {
+    z-index: 1;
+  }
 
 }
