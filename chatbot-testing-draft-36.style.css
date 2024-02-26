@@ -94,23 +94,9 @@ html, body {
 
 @media screen and (max-width: 768px) {
 
-  .vfrc-image--background {
-    background-image: ('https://cdn.jsdelivr.net/gh/paulemilegras/MMA_class@main/ob_9693f5_baie-halong-vietnam.jpeg');
-  } 
-
-  /*.vfrc-widget--chat {
+  .vfrc-widget--chat {
     background-image: url('https://cdn.jsdelivr.net/gh/paulemilegras/MMA_class@main/ob_9693f5_baie-halong-vietnam.jpeg');
     background-size: cover;
     background-position: center;
   }
-  .vfrc-widget--chat::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.41);
-    z-index: -1;
-  }  */
 }
