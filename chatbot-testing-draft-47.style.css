@@ -119,6 +119,7 @@ html, body {
 
   .vfrc-timestamp {
     color: lightgray;
+    z-index: 1;
   }
 
   .vfrc-assistant-info--title {
@@ -128,6 +129,10 @@ html, body {
   .vfrc-assistant-info--description {
     color: lightgray;
   } 
+
+  .vfrc-avatar--assistant {
+    z-index: 1;
+  }*/
 
   /*.vfrc-carousel--button {
     z-index: 4;
