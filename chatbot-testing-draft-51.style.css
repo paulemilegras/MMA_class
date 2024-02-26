@@ -131,6 +131,7 @@ html, body {
 
   .vfrc-chat--session-time {
     color: lightgray;
+    z-index: 1;
   }
 
 }
