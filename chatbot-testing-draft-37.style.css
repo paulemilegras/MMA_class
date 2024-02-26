@@ -94,7 +94,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
 
-  .vfrc-widget--chat {
+  .vfrc-chat {
     background-image: url('https://cdn.jsdelivr.net/gh/paulemilegras/MMA_class@main/ob_9693f5_baie-halong-vietnam.jpeg');
     background-size: cover;
     background-position: center;
