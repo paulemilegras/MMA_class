@@ -140,6 +140,7 @@ html, body {
   
   .vfrc-system-response--actions {
     display: flex; /* Affiche les éléments fils (boutons) en ligne */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
     overflow-x: auto; /* Permet le défilement horizontal si les éléments dépassent la largeur du conteneur */
     white-space: nowrap; /* Empêche les boutons de passer à la ligne suivante */
     -webkit-overflow-scrolling: touch; /* Améliore le défilement sur les appareils tactiles */
