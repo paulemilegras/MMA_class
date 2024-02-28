@@ -145,7 +145,7 @@ html, body {
   }
 
   .vfrc-button {
-    text-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    wrap: nowrap !important; /* Empêche les éléments de passer à la ligne suivante */
   }
 
 }
