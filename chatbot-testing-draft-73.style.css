@@ -139,13 +139,13 @@ html, body {
 @media screen and (max-width: 768px) {
   
   .vfrc-system-response--actions{
-    /*flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
     overflow: scroll; 
     /*white-space: nowrap; /* Empêche les boutons de passer à la ligne suivante */
   }
 
   .vfrc-button {
-    /*flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    text-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
   }
 
 }
