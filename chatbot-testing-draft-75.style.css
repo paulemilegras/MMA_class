@@ -138,14 +138,17 @@ html, body {
 
 @media screen and (max-width: 768px) {
   
-  .vfrc-system-response--actions{
+  .vfrc-system-response--actions {
+    display: flex; /* Utilise flexbox pour les éléments enfants */
     flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
-    overflow: scroll; 
-    /*white-space: nowrap; /* Empêche les boutons de passer à la ligne suivante */
+    overflow-x: auto; /* Active le défilement horizontal */
+    overflow-y: hidden; /* Cache le défilement vertical */
+    white-space: nowrap; /* Cette propriété devrait être appliquée si vous voulez empêcher le retour à la ligne dans les éléments enfants, mais elle n'est pas nécessaire si chaque bouton gère son propre texte */
   }
 
   .vfrc-button {
-    wrap: nowrap !important; /* Empêche les éléments de passer à la ligne suivante */
+    white-space: nowrap; /* Empêche le texte à l'intérieur des boutons de passer à la ligne */
+    flex-shrink: 0; /* Empêche les boutons de rétrécir, assurant qu'ils conservent leur taille basée sur le contenu */
   }
 
 }
