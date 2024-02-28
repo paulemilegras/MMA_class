@@ -140,12 +140,12 @@ html, body {
   
   .vfrc-system-response--actions{
     /*flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
-    overflow-x: scroll; /* Permet le défilement horizontal si les éléments dépassent la largeur du conteneur */
+    overflow: scroll; 
     /*white-space: nowrap; /* Empêche les boutons de passer à la ligne suivante */
   }
 
   .vfrc-button {
-    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    /*flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
   }
 
 }
