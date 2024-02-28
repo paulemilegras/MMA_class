@@ -138,7 +138,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   
-  .vfrc-system-response--actions::-webkit-scrollbar-button {
+  .vfrc-system-response--actions {
     flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
     overflow-x: scroll; /* Permet le défilement horizontal si les éléments dépassent la largeur du conteneur */
     /*white-space: nowrap; /* Empêche les boutons de passer à la ligne suivante */
