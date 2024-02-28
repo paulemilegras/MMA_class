@@ -147,7 +147,7 @@ html, body {
   }
 
   .vfrc-button {
-    /*white-space: nowrap; /* Empêche le texte à l'intérieur des boutons de passer à la ligne */
+    white-space: nowrap; /* Empêche le texte à l'intérieur des boutons de passer à la ligne */
     /*flex-shrink: 0; /* Empêche les boutons de rétrécir, assurant qu'ils conservent leur taille basée sur le contenu */
   }
 
