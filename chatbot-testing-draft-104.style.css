@@ -162,9 +162,8 @@ html, body {
   white-space: normal;    
   word-break: keep-all;  
   /*padding: 10px; */
-  white-space: pre-line;
-  word-break: normal;
-  word-break: ;
+  white-space: pre-line !important;
+  word-break: keep-all;
   hyphens: auto;
   overflow: auto;
 }
