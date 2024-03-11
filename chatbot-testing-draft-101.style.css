@@ -136,3 +136,26 @@ html, body {
 
 }
 
+
+@media screen and (max-width: 768px) {
+  
+  .vfrc-system-response--actions {
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    /*white-space: nowrap; */
+    min-height: 44px;
+  }
+
+  .vfrc-button {
+    white-space: nowrap !important; /* Empêche le texte à l'intérieur des boutons de passer à la ligne */
+    /*flex-shrink: 0; /* Empêche les boutons de rétrécir, assurant qu'ils conservent leur taille basée sur le contenu */
+  }
+
+}
+
+.vfrc-carousel--button {
+  white-space: pre-line;  /* Permet au texte de passer à la ligne là où il y a des retours à la ligne dans le code */
+  word-break: break-word; /* Assure que les mots trop longs pour tenir sur une ligne soient cassés */
+  text-align: center;     /* Centre le texte horizontalement */
+}
