@@ -155,15 +155,8 @@ html, body {
 }
 
 .vfrc-button--primary {
-  /*display: flex;
-  justify-content: center; 
-  align-items: center;    
-  text-align: center;      
-  white-space: normal;    
-  word-break: keep-all;  
-  /*padding: 10px; */
   white-space: pre-line !important;
   word-break: keep-all;
-  hyphens: auto;
-  overflow: auto;
+  overflow: hidden; /
+  text-overflow: ellipsis;
 }
