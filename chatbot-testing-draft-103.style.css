@@ -155,11 +155,16 @@ html, body {
 }
 
 .vfrc-carousel--button {
-  display: flex;
-  justify-content: center; /* Centre le contenu horizontalement */
-  align-items: center;     /* Centre le contenu verticalement */
-  text-align: center;      /* Assure que le texte est centré si sur plusieurs lignes */
-  white-space: normal;     /* Permet au texte de passer à la ligne naturellement */
-  word-break: break-word;  /* Casse les mots trop longs pour s'adapter à leur conteneur */
-  /*padding: 10px;           /* Ajoute un peu d'espace autour du texte pour éviter qu'il touche les bords */
+  /*display: flex;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;      
+  white-space: normal;    
+  word-break: keep-all;  
+  /*padding: 10px; */
+  white-space: pre-line;
+  word-break: normal;
+  word-break: ;
+  hyphens: auto;
+  overflow: auto;
 }
