@@ -155,7 +155,11 @@ html, body {
 }
 
 .vfrc-carousel--button {
-  white-space: pre-line;  /* Permet au texte de passer à la ligne là où il y a des retours à la ligne dans le code */
-  word-break: break-word; /* Assure que les mots trop longs pour tenir sur une ligne soient cassés */
-  text-align: center;     /* Centre le texte horizontalement */
+  display: flex;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center;     /* Centre le contenu verticalement */
+  text-align: center;      /* Assure que le texte est centré si sur plusieurs lignes */
+  white-space: normal;     /* Permet au texte de passer à la ligne naturellement */
+  word-break: break-word;  /* Casse les mots trop longs pour s'adapter à leur conteneur */
+  /*padding: 10px;           /* Ajoute un peu d'espace autour du texte pour éviter qu'il touche les bords */
 }
